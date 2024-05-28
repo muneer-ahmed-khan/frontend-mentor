@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,36 +21,57 @@
 
     <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
     <style>
+      :root {
+        /* layout */
+        --mobile-width: 375px;
+        --desktop-width: 1440px;
+
+        /* colors */
+        --white-color: hsl(0, 0%, 100%);
+        --light-gray-color: hsl(212, 45%, 89%);
+        --grayish-blue-color: hsl(220, 15%, 55%);
+        --dark-blue-color: hsl(218, 44%, 22%);
+
+        /* typography */
+        --font-family: "Outfit", sans-serif;
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+      }
+
       body {
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        background: hsl(212, 45%, 89%);
+        background: var(--light-gray-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: var(--font-family);
+        flex-wrap: wrap;
+        align-content: center;
       }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+
       .card {
         display: flex;
         flex-direction: column;
         border-radius: 20px;
-        background: white;
+        background: var(--white-color);
         width: 320px;
         height: 497px;
-        margin: auto;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        display: flex;
       }
-      .card img {
+      @media (min-width: 375px) {
+        .card {
+          border-radius: 0%;
+        }
+      }
+
+      .qr-code > img {
         display: flex;
         border-radius: 10px;
         margin: 16px;
+      }
+      @media (min-width: 375px) {
+        .qr-code > img {
+          border-radius: 0%;
+        }
       }
 
       .card-text {
@@ -58,37 +79,41 @@
         flex-direction: column;
       }
 
-      .card-text h1 {
+      .card-text h2 {
         margin: 0px 20px;
-        text-shadow: 0px 2px 3px #000000;
+        text-align: center;
+        color: var(--dark-blue-color);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
 
-      .card-text h2 {
+      .card-text h4 {
         color: gray;
         padding: 12px;
-        /* margin: 0px 20px;
-        text-shadow: 0px 2px 3px #000000; */
+        text-align: center;
+        margin: 0px 10px;
       }
     </style>
   </head>
   <body>
-    <div class="attribution">
-      <div class="card">
+    <div class="card">
+      <div class="qr-code">
         <img src="./images/image-qr-code.png" height="288" width="288" />
-
-        <div class="card-text">
-          <h1>Improve your front-end skills by building projects</h1>
-
-          <h2>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </h2>
-        </div>
       </div>
 
+      <div class="card-text">
+        <h2>Improve your front-end skills by building projects</h2>
+
+        <h4>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </h4>
+      </div>
+    </div>
+
+    <!-- <div>
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Muneer Ahmed</a>.
-    </div>
+    </div> -->
   </body>
 </html>
