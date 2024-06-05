@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Repo](https://github.com/muneer-ahmed-khan/frontend-mentor/tree/master/blog-preview-card-main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
