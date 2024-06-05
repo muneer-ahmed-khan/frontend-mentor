@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/muneer-ahmed-khan/frontend-mentor/tree/master/blog-preview-card-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Githup pages live](https://muneer-ahmed-khan.github.io/frontend-mentor/blog-preview-card-main/)
 
 ## My process
 
