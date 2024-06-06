@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/muneer-ahmed-khan/frontend-mentor/edit/master/social-links-profile-main)
+- Live Site URL: [Visit live website](https://muneer-ahmed-khan.github.io/frontend-mentor/social-links-profile-main/)
 
 ## My process
 
