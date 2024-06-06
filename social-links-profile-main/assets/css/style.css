@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-weight: 400 600 700;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 20%);
+  --dark-gray: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  --font-size: 14px;
+  --font-family: "Inter";
+
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--off-black);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 330px;
+  height: 580px;
+  border-radius: 10px;
+  background-color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 385px;
+    height: 615px;
+  }
+}
+
+.card-image {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-image: url("./../images/avatar-jessica.jpeg");
+  background-size: cover;
+  width: 89px;
+  height: 91px;
+}
+
+@media (min-width: 1440px) {
+  .card-image {
+    margin-top: 40px;
+    margin-bottom: 27px;
+  }
+}
+
+.card-name {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-country {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  color: var(--white);
+  font-size: 13.7px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1440px) {
+  .card-title {
+    margin-bottom: 26px;
+  }
+}
+
+.card-button {
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: 15.5px;
+  width: 284px;
+  height: 46px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 17px;
+}
+
+.card-button:hover {
+  background-color: var(--green);
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .card-button {
+    width: 308px;
+    height: 48px;
+    margin-bottom: 13px;
+  }
+}
